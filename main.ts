@@ -146,6 +146,7 @@ let Ente = sprites.create(img`
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
 Ente.setStayInScreen(true)
+controller.moveSprite(Ente)
 info.startCountdown(30)
 forever(function () {
     projectile = sprites.createProjectileFromSide(img`
